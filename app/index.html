@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="/img/fav.png" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Яндекс Дом</title>
+
+</head>
+<body>
+
+	<main>
+		<header class="main-header">
+			<div class="main-header__logo logo">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<nav class="main-header__main-nav main-nav">
+				<ul>
+					<li class="selected">Сводка</li>
+					<li>Устройства</li>
+					<li>Сценарии</li>
+				</ul>
+			</nav>
+			<img src="img/icon_list_m@2x.png" alt="Mobile menu" class="mobile-nav-icon">
+		</header>
+		<div class="mobile-nav">
+			<ul>
+				<li class="selected">Сводка</li>
+				<li>Устройства</li>
+				<li>Сценарии</li>
+			</ul>
+		</div>
+
+		<section class="main-section">
+			<div class="module-main module">
+				<div class="module__title">Главное</div>
+				<div class="module-main__info-box module__info-box">
+					<div class="left-side">
+						<div class="hello-title">
+							<div class="hello-title__big">Привет, Геннадий!</div>
+							<div class="hello-title__small">Двери и окна закрыты, сигнализация включена.</div>
+						</div>
+						<div class="home-short-info">
+							<div class="home-short-info__in">
+								<div>Дома</div>
+								<div>+23</div>
+							</div>
+							<div class="home-short-info__out">
+								<div>За окном</div>
+								<div>+19 <img src="img/cloud-drizzle@2x.png" alt="cloud-drizzle"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="right-side">
+						<div class="up-btn">
+							<img src="img/ArrowUp.png" alt="SlideUp">
+						</div>
+						<div class="vertical-slider">
+							<div class="vertical-slider__item typical-item typical-item--tall">
+								<img class="typical-item__icon" src="img/icon_temperature@2x.png" alt="Temperature-controller">
+								<div class="typical-item__info">
+									<div class="description">Xiaomi Warm Floor</div>
+									<div class="status">Начнет охлаждать в 16:30</div>
+								</div>
+								<div class="light-controller t-controller modal-inner">
+									<div class="light-controller__bulb-interface bulb-interface t-interface">
+										<div class="bulb-interface__header t-interface__header">
+											<div class="main-title">
+												<h2>Xiaomi Warm Floor</h2>
+												<div class="status">Включено</div>
+											</div>
+											<div class="icons">
+												<span>+23</span>
+												<img src="img/icon_temperature_2@2x.png" alt="Temperature" class="icon">
+											</div>
+											
+										</div>
+										<div class="t-interface__radial-controller radial-controller"> <!-- Я не смог реализовать js код, думал над алгоритмом (возможно стоит в обработчике события drag на элементе по центру поставить изменение положения по оси X для прямоугольного блока с картинкой желтого овала на бэкграунде, чтобы он наплывал слева на такой же блок но с бэкграундом из серого овала, тогда получится эффект прокрутки )-->
+											<div class="radial-controller__back"></div>
+											<div class="radial-controller__inner">
+												+23
+											</div>
+										</div>
+									</div>
+									<div class="light-controller__modal-buttons modal-buttons">
+										<div class="modal-buttons__apply">Применить</div>
+										<div class="modal-buttons__close" onclick="		$('main').removeClass('blured');$('body > .item-modal').animate({opacity : 0},120).fadeOut(100).find('.item-modal__inner').remove();$('body > .item-modal').append('<div class='+'item-modal__inner'+'></div>');">Закрыть</div>
+									</div>
+								</div>
+							</div>
+							<div class="vertical-slider__item typical-item typical-item--tall">
+								<img class="typical-item__icon" src="img/icon_sun@2x.png" alt="Light-controller">
+								<div class="typical-item__info">
+									<div class="description">Xiaomi Yeelight LED Smart Bulb</div>
+									<div class="status">Включится в 17:00</div>
+								</div>
+								<div class="light-controller modal-inner">
+									<div class="light-controller__bulb-interface bulb-interface">
+										<div class="bulb-interface__header">
+											<div class="main-title">
+												<h2>Xiaomi Yeelight LED Smart Bulb</h2>
+												<div class="status">Включится в 17:00</div>
+											</div>
+											<img src="img/icon_sun@2x.png" alt="Light" class="icon">
+										</div>
+										<div class="bulb-interface__presets">
+											<ul>
+												<li class="selected">Вручную</li>
+												<li>Дневной свет</li>
+												<li>Вечерний свет</li>
+												<li>Рассвет</li>
+											</ul>
+										</div>
+										<div class="bulb-interface__range-control range-control">
+											<img src="img/icon_sun_min@2x.png" alt="Min">
+											<input type="range">
+											<img src="img/icon_sun_max@2x.png" alt="Max">
+										</div>
+									</div>
+									<div class="light-controller__modal-buttons modal-buttons">
+										<div class="modal-buttons__apply">Применить</div>
+										<div class="modal-buttons__close" onclick="		$('main').removeClass('blured');$('body > .item-modal').animate({opacity : 0},120).fadeOut(100).find('.item-modal__inner').remove();$('body > .item-modal').append('<div class='+'item-modal__inner'+'></div>');">Закрыть</div>
+									</div>
+								</div>
+							</div>
+							<div class="vertical-slider__item typical-item typical-item--tall">
+								<img class="typical-item__icon" src="img/icon_sun@2x.png" alt="Light-controller">
+								<div class="typical-item__info">
+									<div class="description">Philips Cooler</div>
+									<div class="status">Начнет охлаждать в 16:30</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="module-fav-scenarios module">
+				<div class="module__title">
+					<span>Избранные сценарии</span>
+					<div class="nav-arrows">
+						<img class="nav-arrows__left" src="img/ArrowLeft.png" alt="Previous">
+						<img class="nav-arrows__right" src="img/ArrowLeft.png" alt="Next">
+					</div>
+				</div>
+				<div class="module-fav-scenarios__info-box module__info-box owl-carousel">
+					<div class="item">
+						<div class="scenario-item typical-item">
+							<img class="scenario-item__icon typical-item__icon" src="img/icon_sun_2@2x.png" alt="Light-controller">
+							<div class="scenario-item__info typical-item__info">
+								<div class="description">Выключить весь свет в доме и во дворе</div>
+							</div>
+						</div>
+						<div class="scenario-item typical-item">
+							<img class="scenario-item__icon typical-item__icon" src="img/icon_scheduled@2x.png" alt="Time-controller">
+							<div class="scenario-item__info typical-item__info">
+								<div class="description">Я ухожу</div>
+							</div>
+						</div>
+						<div class="scenario-item typical-item">
+							<img class="scenario-item__icon typical-item__icon" src="img/icon_sun_2@2x.png" alt="Light-controller">
+							<div class="scenario-item__info typical-item__info">
+								<div class="description">Включить свет в коридоре</div>
+							</div>
+						</div>
+						<div class="scenario-item typical-item">
+							<img class="scenario-item__icon typical-item__icon" src="img/icon_temperature_2@2x.png" alt="Temperature-controller">
+							<div class="scenario-item__info typical-item__info">
+								<div class="description">Набрать горячую ванну</div>
+								<div class="status">Начнётся в 18:00</div>
+							</div>
+						</div>
+						<div class="scenario-item typical-item">
+							<img class="scenario-item__icon typical-item__icon" src="img/icon_temperature_2@2x.png" alt="Temperature-controller">
+							<div class="scenario-item__info typical-item__info">
+								<div class="description">Сделать пол тёплым во всей квартире</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="module-fav-devices module">
+				<div class="module-fav-devices__title module__title">
+					<div class="left-side">
+						<span>Избранные устройства</span>
+						<div class="categories-tabs">
+							<div class="categories-tabs__item selected">Все</div>
+							<div class="categories-tabs__item">Кухня</div>
+							<div class="categories-tabs__item">Зал</div>
+							<div class="categories-tabs__item">Лампочки</div>
+							<div class="categories-tabs__item">Камеры</div>
+						</div>
+					</div>
+					<div class="nav-arrows">
+						<img class="nav-arrows__left" src="img/ArrowLeft.png" alt="Previous">
+						<img class="nav-arrows__right" src="img/ArrowLeft--selected.png" alt="Next">
+					</div>
+				</div>
+				<div class="module-fav-devices__info-box module__info-box">
+					<div class="device-slider owl-carousel owl-theme">
+						<div class="device-item typical-item typical-item--tall item">
+							<img class="device-item__icon typical-item__icon" src="img/icon_sun_2@2x.png" alt="Light-controller">
+							<div class="device-item__info typical-item__info">
+								<div class="description">Xiaomi Yeelight LED Smart Bulb</div>
+								<div class="status">Включено</div>
+							</div>
+							<div class="light-controller modal-inner">
+								<div class="light-controller__bulb-interface bulb-interface">
+									<div class="bulb-interface__header">
+										<div class="main-title">
+											<h2>Xiaomi Yeelight LED Smart Bulb</h2>
+											<div class="status">Включится в 17:00</div>
+										</div>
+										<img src="img/icon_sun@2x.png" alt="Light" class="icon">
+									</div>
+									<div class="bulb-interface__presets">
+										<ul>
+											<li class="selected">Вручную</li>
+											<li>Дневной свет</li>
+											<li>Вечерний свет</li>
+											<li>Рассвет</li>
+										</ul>
+									</div>
+									<div class="bulb-interface__range-control range-control">
+										<img src="img/icon_sun_min@2x.png" alt="Min">
+										<input type="range">
+										<img src="img/icon_sun_max@2x.png" alt="Max">
+									</div>
+								</div>
+								<div class="light-controller__modal-buttons modal-buttons">
+									<div class="modal-buttons__apply">Применить</div>
+									<div class="modal-buttons__close" onclick="		$('main').removeClass('blured');$('body > .item-modal').animate({opacity : 0},120).fadeOut(100).find('.item-modal__inner').remove();$('body > .item-modal').append('<div class='+'item-modal__inner'+'></div>');">Закрыть</div>
+								</div>
+							</div>
+						</div>
+						<div class="device-item typical-item typical-item--tall item">
+							<img class="device-item__icon typical-item__icon" src="img/icon_sun_2@2x.png" alt="Light-controller">
+							<div class="device-item__info typical-item__info">
+								<div class="description">D-Link Omna 180 Cam</div>
+								<div class="status">Включится в 17:00</div>
+							</div>
+						</div>
+						<div class="device-item typical-item typical-item--tall item" onclick="">
+							<img class="device-item__icon typical-item__icon" src="img/icon_temperature@2x.png" alt="Temperature-controller">
+							<div class="device-item__info typical-item__info">
+								<div class="description">Elgato Eve Degree Connected</div>
+								<div class="status">Выключено до 17:00</div>
+							</div>
+							<div class="light-controller t-controller modal-inner">
+								<div class="light-controller__bulb-interface bulb-interface t-interface">
+									<div class="bulb-interface__header t-interface__header">
+										<div class="main-title">
+											<h2>Elgato Eve Degree Connected</h2>
+											<div class="status">Включено</div>
+										</div>
+										<div class="icons">
+											<span>+23</span>
+											<img src="img/icon_temperature_2@2x.png" alt="Temperature" class="icon">
+										</div>
+										
+									</div>
+									<div class="bulb-interface__presets t-interface__presets">
+										<ul>
+											<li class="selected">Вручную</li>
+											<li>Холодно</li>
+											<li>Тепло</li>
+											<li>Жарко</li>
+										</ul>
+									</div>
+									<div class="bulb-interface__range-control t-interface__range-control range-control">
+										<span>-10</span>
+										<input type="range">
+										<span>+30</span>
+									</div>
+								</div>
+								<div class="light-controller__modal-buttons modal-buttons">
+									<div class="modal-buttons__apply">Применить</div>
+									<div class="modal-buttons__close" onclick="		$('main').removeClass('blured');$('body > .item-modal').animate({opacity : 0},120).fadeOut(100).find('.item-modal__inner').remove();$('body > .item-modal').append('<div class='+'item-modal__inner'+'></div>');">Закрыть</div>
+								</div>
+							</div>
+						</div>
+						<div class="device-item typical-item typical-item--tall item">
+							<img class="device-item__icon typical-item__icon" src="img/icon_sun_2@2x.png" alt="Light-controller">
+							<div class="device-item__info typical-item__info">
+								<div class="description">LIFX Mini Day & Dusk A60 E27</div>
+								<div class="status">Включится в 17:00</div>
+							</div>
+						</div>
+						<div class="device-item typical-item typical-item--tall item">
+							<img class="device-item__icon typical-item__icon" src="img/icon_sun_2@2x.png" alt="Light-controller">
+							<div class="device-item__info typical-item__info">
+								<div class="description">Xiaomi Mi Air Purifier 2S</div>
+								<div class="status">Включено</div>
+							</div>
+						</div>
+						<div class="device-item typical-item typical-item--tall item">
+							<img class="device-item__icon typical-item__icon" src="img/icon_sun@2x.png" alt="Light-controller">
+							<div class="device-item__info typical-item__info">
+								<div class="description">Philips Zhirui</div>
+								<div class="status">Выключено</div>
+							</div>
+						</div>
+						<div class="device-item typical-item typical-item--tall item">
+							<img class="device-item__icon typical-item__icon" src="img/icon_sun@2x.png" alt="Light-controller">
+							<div class="device-item__info typical-item__info">
+								<div class="description">Philips Zhirui</div>
+								<div class="status">Выключено</div>
+							</div>
+						</div>
+						<div class="device-item typical-item typical-item--tall item">
+							<img class="device-item__icon typical-item__icon" src="img/icon_sun@2x.png" alt="Light-controller">
+							<div class="device-item__info typical-item__info">
+								<div class="description">Philips Zhirui</div>
+								<div class="status">Выключено</div>
+							</div>
+						</div>
+						<div class="device-item typical-item typical-item--tall item">
+							<img class="device-item__icon typical-item__icon" src="img/icon_sun@2x.png" alt="Light-controller">
+							<div class="device-item__info typical-item__info">
+								<div class="description">Philips Zhirui</div>
+								<div class="status">Выключено</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		<footer class="main-footer">
+			<ul class="main-footer__list">
+				<li>Помощь</li>
+				<li>Обратная связь</li>
+				<li>Разработчикам</li>
+				<li>Условия использования</li>
+			</ul>
+			<div class="main-footer__copyright">© 2001–2017  ООО «Яндекс»</div>
+		</footer>
+	</main>
+
+	<!-- Modal -->
+	<div class="item-modal">
+		<div class="item-modal__inner">
+			
+		</div>
+	</div>
+	
+	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/scripts.js"></script>
+	<script src="libs/OwlCarousel2/dist/owl.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>

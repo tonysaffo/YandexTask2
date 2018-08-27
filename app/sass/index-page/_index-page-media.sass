@@ -1,0 +1,116 @@
+@media screen and (max-width: 985px)
+	.up-btn
+		display: none
+	.mobile-nav 
+		//display: block
+	.main-nav
+		display: none
+	body .mobile-nav-icon
+    display: block
+	main .main-header
+		justify-content: space-between
+	.main-section
+		//width: 100%
+		display: block
+		grid-template-areas: "main""fav-scenarios""fav-devices"
+		grid-template-columns: 100%
+		grid-template-rows: 200px 200px 200px
+	.owl-loaded
+		width: calc(100vw - 80px)
+	main 
+		display: block
+	body 
+		overflow: auto
+	.main-section .module-main__info-box
+		display: block
+		.right-side
+			.vertical-slider
+				
+				margin: 0
+				width: 100%
+				box-sizing: border-box
+				background: 
+				height: 140px
+				padding: 0
+				margin-top: 40px
+				display: flex
+				overflow-x: scroll
+				&__item
+					margin: 0
+					margin-right: 20px
+					flex-shrink: 0
+					width: 200px
+					//float: left
+	.module-fav-scenarios
+		margin-top: 40px	
+	.module-fav-devices 
+		margin-top: 25px
+	.main-section
+		height: auto
+	.main-footer
+		padding-bottom: 30px
+
+	// MODALS 
+
+	.modal-buttons
+		display: block
+		&__apply
+			margin-bottom: 20px
+	.t-interface, .bulb-interface
+		width: 100%
+		box-sizing: border-box
+		&__header
+			.main-title
+				margin-right: 20px
+	.item-modal
+		padding: 20px
+		box-sizing: border-box
+	.range-control
+		//transform: rotate(90deg)
+		//height: 200px
+	.bulb-interface__presets
+		display: block
+		flex-wrap: wrap
+		//height: 20px
+		position: relative
+		ul
+			overflow-x: scroll
+			display: flex
+			width: 300px	
+			li 
+				flex-shrink: 0
+				flex-grow: 0
+				//float: left
+	.bulb-interface__header .icon
+		width: 45px !important
+		height: 45px !important
+
+
+@media screen and (max-width: 658px)
+	.main-section .module-fav-devices__title .left-side
+		display: block
+		span 
+			margin-bottom: 20px
+	.categories-tabs
+		padding-top: 10px
+		display: flex
+		width: 300px
+		margin-right: 0
+		overflow-x: scroll
+		&__item 
+			float: left
+@media screen and (max-width: 432px)
+	.categories-tabs
+		width: 200px
+	.main-section .module-main__info-box
+		height: 345px
+	.bulb-interface__presets
+		ul
+			width: 250px
+
+@media screen and (max-width: 373px)
+	.main-section .module-main__info-box
+		height: 373px
+@media screen and (max-width: 333px)
+	.categories-tabs
+		width: 150px
